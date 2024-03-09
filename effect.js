@@ -166,7 +166,7 @@ $('document').ready(function(){
 	
 	$('#story').click(function(){
 		$(this).fadeOut('slow');
-		$('.cake').fadeOut('slow').delay(3000).promise().done(function(){
+		$('.cake').fadeOut('slow').delay(7000).promise().done(function(){
 			$('.message').fadeIn('slow');
 		});
 		
@@ -175,7 +175,7 @@ $('document').ready(function(){
 		function msgLoop (i) {
 			$("p:nth-child("+i+")").fadeOut('slow').delay(7000).promise().done(function(){
 			i=i+1;
-			$("p:nth-child("+i+")").fadeIn('slow').delay(3000);
+			$("p:nth-child("+i+")").fadeIn('slow').delay(9000);
 			if(i==50){
 				$("p:nth-child(49)").fadeOut('slow').promise().done(function () {
 					$('.cake').fadeIn('slow');
